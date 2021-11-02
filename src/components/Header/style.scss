@@ -1,0 +1,22 @@
+.header{
+    background-color: rgb(255, 255, 255);
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        @media(min-width:768px){
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
